@@ -50,6 +50,7 @@ function Home() {
                   </div>
                 </div>
                 <button onClick={()=>deleteItem(item._id)}>❌</button>
+                <button><Link to={`update/${item._id}`}>Modifier</Link></button>
               </li>
             );
           })}
